@@ -12,7 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return "Hello from Laravel!";
+});
+
+Route::get('/about', function () {
+    return view('pages/about');
 });
 
 /*
