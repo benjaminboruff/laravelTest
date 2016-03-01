@@ -12,8 +12,9 @@
 */
 
 Route::get('/', function () {
-    //return view('welcome');
-    return "Hello from Laravel!";
+    $monsters = ["King Kong", "Godzilla", "Wolfman"];
+    return view('welcome', compact('monsters'));
+    //return "Hello from Laravel!";
 });
 
 Route::get('/about', function () {

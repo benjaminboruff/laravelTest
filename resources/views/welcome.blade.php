@@ -38,7 +38,15 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">Monsters!</div>
+                <div>
+                    <?php foreach ($monsters as $monster) : ?>
+                    <li> 
+                        <h4> <?= $monster;?> </h4> 
+                    </li>
+                    <?php endforeach; ?>
+                </div>
+                
             </div>
         </div>
     </body>
