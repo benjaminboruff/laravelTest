@@ -19,4 +19,9 @@ class PagesController extends Controller
     {
         return view('pages/about');
     }
+    
+    public function resume()
+    {
+        return view('pages/about');
+    }
 }
