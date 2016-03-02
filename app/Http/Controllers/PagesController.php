@@ -22,6 +22,6 @@ class PagesController extends Controller
     
     public function resume()
     {
-        return view('pages/about');
+        return view('pages/resume');
     }
 }
