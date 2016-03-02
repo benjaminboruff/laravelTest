@@ -9,7 +9,7 @@
 <div class="container">
     <div class="content">
         <div class="title">Resume</div>
-        <p><h5>Cool stuff, eh?</h5></p>
+        <p><h5>JavaScript Junkie</h5></p>
     </div>
 </div>
 
