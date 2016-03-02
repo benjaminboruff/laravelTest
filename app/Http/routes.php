@@ -11,15 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    $monsters = ["King Kong", "Godzilla", "Wolfman"];
-    return view('welcome', compact('monsters'));
-    //return "Hello from Laravel!";
-});
 
-Route::get('/about', function () {
-    return view('pages/about');
-});
+
+Route::get('/', 'PagesController@home');
+
+Route::get('about', 'PagesController@about');
 
 /*
 |--------------------------------------------------------------------------
