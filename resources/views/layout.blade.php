@@ -34,7 +34,7 @@
                 font-size: 96px;
             }
         </style>
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
     </head>
     <body>
         @yield('content')
