@@ -19,6 +19,10 @@ Route::get('contact', 'PagesController@contact');
 
 Route::get('resume', 'PagesController@resume');
 
+Route::get('cards', 'CardsController@index');
+
+Route::get('cards/{card}', 'CardsController@show');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
