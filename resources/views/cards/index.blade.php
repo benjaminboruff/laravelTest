@@ -2,8 +2,11 @@
 
 @section('content')
     <h1>All cards</h1>
-    
-    @foreach ($cards as $card)
-        <div><h6> {{ $card->title }} </h6></div>
-    @endforeach
+    <div>
+        <ul>
+        @foreach ($cards as $card)
+            <li><a href="/cards/{{$card->id}}" <h6> {{ $card->title }} </h6></a></li>
+        @endforeach
+        </ul>
+    </div>
 @stop
