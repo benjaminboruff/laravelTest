@@ -14,26 +14,39 @@ class NotesController extends Controller
         // $note = new Note;
         // $note->body = $request->body;
         // $card->notes()->save($note);
-        
+
         // alt 2
         // $note = new Note(['body' => $request->body]);
         // $card->notes()->save($note);
-        
+
         //alt 3
         // $card->notes()->create([
         //     'body' => $request->body
         // ]);
-        
+
         //alt 4
         //$card->notes()->create($request->all());
-        
+
         //alt5
         $card->addNote(
-            
+
             new Note($request->all())
-            
+
         );
-        
+
         return back();
+    }
+
+    public function edit(Note $note)
+    {
+      return view('notes/edit', compact('note'));
+    }
+
+    public function update(Request $request, Note $note)
+    {
+      //dd('hit');
+      $note->update($request->all());
+
+      return back();
     }
 }

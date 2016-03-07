@@ -2,7 +2,7 @@
 
 @section('title')
 <title>Contact</title>
-@stop
+@endsection
 
 @section('content')
 
@@ -13,4 +13,4 @@
     </div>
 </div>
 
-@stop
+@endsection

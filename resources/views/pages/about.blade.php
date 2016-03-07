@@ -2,7 +2,7 @@
 
 @section('title')
 <title>About</title>
-@stop
+@endsection
 
 @section('content')
 
@@ -13,7 +13,7 @@
     </div>
 </div>
 
-@stop
+@endsection
 
 @section('footer')
 
@@ -21,4 +21,4 @@
     alert('About page only!');
 </script>
 
-@stop
+@endsection

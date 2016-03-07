@@ -2,7 +2,7 @@
 
 @section('title')
 <title>Laravel</title>
-@stop
+@endsection
 
 @section('content')
 
@@ -11,8 +11,8 @@
         <div class="title">Monsters!</div>
         <div>
             <?php foreach ($monsters as $monster) : ?>
-            <li> 
-                <h4> <?= $monster;?> </h4> 
+            <li>
+                <h4> <?= $monster;?> </h4>
             </li>
             <?php endforeach; ?>
         </div>
@@ -20,4 +20,4 @@
     </div>
 </div>
 
-@stop
+@endsection
