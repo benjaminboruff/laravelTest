@@ -10,6 +10,13 @@ class NotesController extends Controller
 {
     public function store(Request $request, Card $card)
     {
+
+        //Validation!!!
+        $this->validate($request, [
+          'body' => 'required|min:10'
+        ]);
+
+
         // alt 1
         // $note = new Note;
         // $note->body = $request->body;
@@ -28,11 +35,10 @@ class NotesController extends Controller
         //$card->notes()->create($request->all());
 
         //alt5
-        $card->addNote(
+        $note = new Note($request->all());
+        //$note->user_id = 1;
 
-            new Note($request->all())
-
-        );
+        $card->addNote($note, 1);
 
         return back();
     }
